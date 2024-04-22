@@ -16,7 +16,7 @@ const port = process.env.PORT || 8000;
 
 const corsOptions = {
   origin: true,
-  // credentials: true,
+  credentials: true,
 };
 
 app.get("/", (req, res) => {
@@ -28,8 +28,8 @@ mongoose.set("strictQuery", false);
 const connectDB = async () => {
   try {
      await mongoose.connect(process.env.MONGO_URL);
-    //  useNewUrlParser:true;
-    //   useUnifiedTopology:true;
+     useNewUrlParser:true;
+      useUnifiedTopology:true;
     console.log(`MongoDB connected`);
   } catch (error) {
     console.error(`Error: ${error.message}`);
