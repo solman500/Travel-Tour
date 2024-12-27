@@ -58,7 +58,10 @@
     box-shadow: 3px 3px 8px -3px #ddd;
 }
 
+.nav__btns h5{
+    font-size: 15px;
 
+}
 @media only screen and (max-width: 992px){
   
 

@@ -86,7 +86,7 @@ const menuRef=useRef(null);
               <div className="nav__btns d-flex align-items-center gap-4 ">
                 {user ? (
                   <>
-                    <h5 className="mb-0 ms-2 ">{user.data.username}</h5>
+                    <h5 className="mb-0 ms-2 text-xs  ">Welcome: {user.data?.username}</h5>
                     <button className="btn btn-dark" onClick={logout}>
                       Logout
                     </button>
